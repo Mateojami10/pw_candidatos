@@ -1,26 +1,25 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <!--<BuscarCandidatoView />-->
+    <!--<DogWatcherView />-->
+    <BuscarUsuariosView />
+  </div>
+  
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
+<script>    
+import BuscarCandidatoView from '../src/views/BuscarCandidatoView.vue';
+import DogWatcherView from './views/DogWatcherView.vue';
+import BuscarUsuariosView from './views/BuscarUsuariosView.vue';
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    /*BuscarCandidatoView,*/
+    /*DogWatcherView,*/
+    BuscarUsuariosView
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
